@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+	<!-- Appenders -->
+	<appender name="ConsoleAppender" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{dd MMM yyyy HH:mm:ss,SSS} %-10t [%-5p]    %-50c{2} %x - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="rollingFileAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="\${user.home}/mobiNxt/mobiNxt.log" />
+		<param name="MaxFileSize" value="10000KB" />
+		<param name="MaxBackupIndex" value="1000" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{dd MMM yyyy HH:mm:ss,SSS} %-10t [%-5p]    %-50c{2} %x - %m%n" />
+		</layout>
+	</appender>
+
+	<!-- Loggers -->
+	<logger name="com.mobiNxt">
+		<level value="TRACE" />
+	</logger>
+
+
+
+	<root>
+		<level value="DEBUG" />
+		<appender-ref ref="ConsoleAppender" />
+		<appender-ref ref="rollingFileAppender" />
+		<!-- <appender-ref ref="EmailAppender" /> -->
+	</root>
+</log4j:configuration>
