@@ -35,7 +35,7 @@ public class InstallationMain {
 							+ Constant.FIELD + i);
 					String fieldArr[] = fieldStr.split(Constant.SEPERATOR);
 					for (String temp : fieldArr) {
-						query = query + temp + " ";
+						query = query + temp.trim() + " ";
 					}
 					query = query + " " + Constant.SEPERATOR;
 				}
@@ -61,10 +61,11 @@ public class InstallationMain {
 				+ Constant.TOTAL_CONSTRAINT);
 		if (totalConStr == null)
 			return queue;
+		queue = ",";
 		for (int i = 1; i <= Integer.parseInt(totalConStr); i++) {
 			queue = queue
 					+ PropertyReader.readProperty(tableName
-							+ Constant.CONSTRAINT + i);
+							+ Constant.CONSTRAINT + i).trim();
 			queue = queue + " ";
 
 		}
