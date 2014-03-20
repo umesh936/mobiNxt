@@ -236,7 +236,8 @@
     <module>admin-ui</module>
     <module>location-api</module>
     <module>common</module>
-  </modules>
+    <module>Repository</module>
+</modules>
 	<organization>
 		<name>MobiNxt</name>
 		<url>www.MobiNxt.com</url>
