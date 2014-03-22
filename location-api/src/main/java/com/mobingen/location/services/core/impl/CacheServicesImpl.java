@@ -1,6 +1,6 @@
-package com.mobingen.services.core.impl;
+package com.mobingen.location.services.core.impl;
 
-import com.mobingen.services.core.CacheServices;
+import com.mobingen.location.services.core.CacheServices;
 import org.springframework.stereotype.Component;
 
 /**

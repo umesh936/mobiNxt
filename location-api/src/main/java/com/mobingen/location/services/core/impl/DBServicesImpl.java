@@ -1,10 +1,9 @@
-package com.mobingen.services.core.impl;
+package com.mobingen.location.services.core.impl;
 
-import com.mobingen.services.core.DBServices;
+import com.mobingen.location.services.core.DBServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.stereotype.Component;
 
 /**
@@ -34,5 +33,10 @@ public class DBServicesImpl implements DBServices {
         }
 
         return null;
+    }
+
+    @Override
+    public void updateAddress(String address, String latitute, String longitute) {
+
     }
 }

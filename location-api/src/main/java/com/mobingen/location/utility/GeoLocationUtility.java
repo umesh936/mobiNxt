@@ -1,13 +1,10 @@
-package com.mobingen.services.utility;
+package com.mobingen.location.utility;
 
-
-import org.slf4j.LoggerFactory;
 
 import java.io.*;
-import java.math.BigDecimal;
 import java.net.URL;
 import java.nio.charset.Charset;
-import java.util.logging.Logger;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
