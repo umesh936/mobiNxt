@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+    
+    <definition name="@frame-mobiNxt" template="/WEB-INF/views/mobiNxt/layout/layout-mobiNxt.jsp" >
+        <put-attribute name="mobiNxtHeader" value="/WEB-INF/views/mobiNxt/shared/mobiNxtHeader.jsp" />
+        <put-attribute name="mobiNxtFooter" value="/WEB-INF/views/mobiNxt/shared/mobiNxtFooter.jsp" />
+    </definition>
+
+    <definition name="@blankFrame-mobiNxt" template="/WEB-INF/views/mobiNxt/layout/layout-mobiNxt.jsp" >
+        <put-attribute name="mobiNxtHeader" value="" />
+        <put-attribute name="mobiNxtFooter" value="" />
+        <put-attribute name="head" value="/WEB-INF/views/mobiNxt/home/shared/head.jsp" />
+    </definition>
+    
+
+    <definition name="@login-mobiNxt" extends="@blankFrame-mobiNxt">
+        <put-attribute name="title" value="Login to track your employee." />
+        <put-attribute name="body" value="/WEB-INF/views/mobiNxt/home/authenticate/body.jsp" />
+    </definition>
+
+    <definition name="@signup-mobiNxt" extends="@blankFrame-mobiNxt">
+        <put-attribute name="title" value="Signup - track your employee." />
+        <put-attribute name="metaDescription" value="" />
+        <put-attribute name="body" value="/WEB-INF/views/mobiNxt/home/signup/body.jsp" />
+    </definition>
+    
+    <definition name="@resetPassword-mobiNxt" extends="@blankFrame-mobiNxt">
+        <put-attribute name="title" value="Reset password on MobiNxt - Track your employee " />
+        <put-attribute name="metaDescription" value="" />
+        <put-attribute name="body" value="/WEB-INF/views/mobiNxt/home/resetPassword/resetPassword.jsp" />
+    </definition>
+
+    <definition name="@contactUs-mobiNxt" extends="@frame-mobiNxt" >
+        <put-attribute name="title" value="Contact us on phone, email to conduct with your." />
+        <put-attribute name="metaDescription" value="" />
+        <put-attribute name="head" value="/WEB-INF/views/mobiNxt/home/shared/headPreLogin.jsp" />
+        <put-attribute name="body"  value="/WEB-INF/views/mobiNxt/home/contactUs/body.jsp"/>
+    </definition>
+
+    <definition name="@404-mobiNxt" extends="@frame-mobiNxt" >
+        <put-attribute name="title" value="404 : mobiNxt.com" />
+        <!--   <put-attribute name="metaDescription" value="" /> -->
+        <put-attribute name="head" value="/WEB-INF/views/mobiNxt/error/head.jsp" />
+        <put-attribute name="body"  value="/WEB-INF/views/mobiNxt/error/404.jsp"/>
+    </definition>
+
+    <definition name="@serverError-mobiNxt" extends="@frame-mobiNxt" >
+        <put-attribute name="title" value="Some error occurred" />
+        <put-attribute name="metaDescription" value="" />
+        <put-attribute name="head" value="/WEB-INF/views/mobiNxt/error/head.jsp" />
+        <put-attribute name="body"  value="/WEB-INF/views/mobiNxt/error/serverError.jsp"/>
+    </definition>
+
+</tiles-definitions>
