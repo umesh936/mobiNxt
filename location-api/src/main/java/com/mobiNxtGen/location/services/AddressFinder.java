@@ -1,4 +1,4 @@
-package com.mobingen.location.services;
+package com.mobiNxtGen.location.services;
 
 import org.springframework.stereotype.Component;
 

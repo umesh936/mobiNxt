@@ -1,6 +1,7 @@
-package com.mobingen.location.services.core.impl;
+package com.mobiNxtGen.location.services.core.impl;
 
-import com.mobingen.location.services.core.DBServices;
+import com.mobiNxtGen.location.services.core.DBServices;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jdbc.core.JdbcTemplate;

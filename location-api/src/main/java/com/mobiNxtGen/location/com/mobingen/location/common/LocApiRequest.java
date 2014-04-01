@@ -1,4 +1,4 @@
-package com.mobingen.location.com.mobingen.location.common;
+package com.mobiNxtGen.location.com.mobingen.location.common;
 
 /**
  * Created by amitsingh on 3/22/14.

@@ -1,9 +1,10 @@
-package com.mobingen.location.services.impl;
+package com.mobiNxtGen.location.services.impl;
 
-import com.mobingen.location.services.AddressFinder;
-import com.mobingen.location.services.core.CacheServices;
-import com.mobingen.location.services.core.DBServices;
-import com.mobingen.location.utility.GeoLocationUtility;
+import com.mobiNxtGen.location.services.AddressFinder;
+import com.mobiNxtGen.location.services.core.CacheServices;
+import com.mobiNxtGen.location.services.core.DBServices;
+import com.mobiNxtGen.location.utility.GeoLocationUtility;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

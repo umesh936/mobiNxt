@@ -1,10 +1,11 @@
-package com.mobingen.location.controller;
+package com.mobiNxtGen.location.controller;
 
-import com.mobingen.location.api.LocationApi;
-import com.mobingen.location.com.mobingen.location.common.LocApiRequest;
-import com.mobingen.location.com.mobingen.location.common.LocApiResponse;
-import com.mobingen.location.services.core.ILocationService;
-import com.mobingen.location.services.core.LocationServiceFactory;
+import com.mobiNxtGen.location.api.LocationApi;
+import com.mobiNxtGen.location.com.mobingen.location.common.LocApiRequest;
+import com.mobiNxtGen.location.com.mobingen.location.common.LocApiResponse;
+import com.mobiNxtGen.location.services.core.ILocationService;
+import com.mobiNxtGen.location.services.core.LocationServiceFactory;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.servlet.ServletException;

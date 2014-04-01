@@ -1,7 +1,7 @@
-package com.mobingen.location.services.core;
+package com.mobiNxtGen.location.services.core;
 
-import com.mobingen.location.com.mobingen.location.common.LocApiRequest;
-import com.mobingen.location.com.mobingen.location.common.LocApiResponse;
+import com.mobiNxtGen.location.com.mobingen.location.common.LocApiRequest;
+import com.mobiNxtGen.location.com.mobingen.location.common.LocApiResponse;
 
 /**
  * Created by amitsingh on 3/22/14.

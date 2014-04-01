@@ -1,4 +1,5 @@
-import com.mobingen.location.services.AddressFinder;
+import com.mobiNxtGen.location.services.AddressFinder;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

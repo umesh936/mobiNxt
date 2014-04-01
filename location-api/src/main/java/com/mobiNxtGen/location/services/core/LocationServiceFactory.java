@@ -1,6 +1,6 @@
-package com.mobingen.location.services.core;
+package com.mobiNxtGen.location.services.core;
 
-import com.mobingen.location.services.core.ILocationService;
+import com.mobiNxtGen.location.services.core.ILocationService;
 
 import java.util.HashMap;
 import java.util.Map;

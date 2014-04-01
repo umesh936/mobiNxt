@@ -1,7 +1,7 @@
-package com.mobingen.location.api;
+package com.mobiNxtGen.location.api;
 
-import com.mobingen.location.com.mobingen.location.common.LocApiRequest;
-import com.mobingen.location.com.mobingen.location.common.LocApiResponse;
+import com.mobiNxtGen.location.com.mobingen.location.common.LocApiRequest;
+import com.mobiNxtGen.location.com.mobingen.location.common.LocApiResponse;
 
 import javax.servlet.ServletException;
 

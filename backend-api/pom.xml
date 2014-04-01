@@ -4,33 +4,56 @@
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.mobiNxt</groupId>
+		<groupId>com.mobiNxtGen</groupId>
 		<artifactId>parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	
+
 	<artifactId>backend-api</artifactId>
 	<name>backend-api</name>
 	<packaging>jar</packaging>
 	<url>http://maven.apache.org</url>
-	
+
 	<dependencies>
+
 		<dependency>
 			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
+			<artifactId>junit-dep</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- Spring Dependencies -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>4.0.2.RELEASE</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		<!-- Spring Dependencies end -->
+
+		<!-- Mysql Dependencies -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.29</version>
 		</dependency>
+		<!-- mysql Dependencies end -->
+
+		<!-- logging Dependencies -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+		</dependency>
+		<!-- logging Dependencies end -->
+
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+		</dependency>
+
+
 	</dependencies>
 	<profiles>
 		<profile>

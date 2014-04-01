@@ -1,4 +1,4 @@
-package com.mobingen.location.utility;
+package com.mobiNxtGen.location.utility;
 
 
 import java.io.*;
