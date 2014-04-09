@@ -1,9 +1,8 @@
 package com.mobiNxtGen.adminUi.web.controller;
 
-import javax.annotation.Resource;
+import org.springframework.web.servlet.ModelAndView;
 
-import com.mobiNxtGen.login.service.LoginService;
-import com.mobiNxtGen.login.service.model.LoggedInUser;
+import javax.annotation.Resource;
 
 import org.apache.log4j.Logger;
 import org.springframework.http.HttpHeaders;
@@ -14,8 +13,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.mobiNxtGen.login.service.LoginService;
+import com.mobiNxtGen.login.service.model.LoggedInUser;
+
 @Controller
-public class LoginController {
+@RequestMapping(value = "/login")
+public class LoginController extends BaseController {
 
 	private static final Logger logger = Logger
 			.getLogger(LoginController.class);
@@ -23,7 +26,7 @@ public class LoginController {
 	@Resource
 	LoginService loginService;
 
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
+	@RequestMapping(value = "/", method = RequestMethod.POST)
 	@ResponseBody
 	public ResponseEntity<String> authenitcateUser(
 			@RequestParam String userName, @RequestParam String password) {
@@ -42,6 +45,11 @@ public class LoginController {
 		return null;
 
 	}
-	
-	
+
+	@RequestMapping(value = "/signup", method = RequestMethod.GET)
+	@ResponseBody
+	public ModelAndView signUpUser() {
+		return null;
+	}
+
 }

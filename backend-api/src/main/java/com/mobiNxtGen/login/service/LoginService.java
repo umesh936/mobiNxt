@@ -22,7 +22,6 @@ public class LoginService {
 				+ (user == null ? "true" : "false"));
 		return user;
 	}
-
 	/*
 	 * public static void main(String[] args) {
 	 * System.out.println(" Main function start ** ");
