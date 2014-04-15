@@ -4,6 +4,8 @@ import javax.annotation.Resource;
 import javax.inject.Named;
 
 import org.apache.log4j.Logger;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.mobiNxtGen.login.service.dao.LoginServiceDao;
 import com.mobiNxtGen.login.service.model.LoggedInUser;
@@ -22,14 +24,15 @@ public class LoginService {
 				+ (user == null ? "true" : "false"));
 		return user;
 	}
-	/*
-	 * public static void main(String[] args) {
-	 * System.out.println(" Main function start ** ");
-	 * 
-	 * System.out.println(LoginService.class
-	 * .getResource("/dispatcher-servlet.xml")); ApplicationContext context =
-	 * new ClassPathXmlApplicationContext( "dispatcher-servlet.xml");
-	 * 
-	 * System.out.println(" Context :" + context); }
-	 */
+
+	/*public static void main(String[] args) {
+		System.out.println(" Main function start ** ");
+
+		System.out.println(LoginService.class
+				.getResource("/dispatcher-servlet.xml"));
+		ApplicationContext context = new ClassPathXmlApplicationContext(
+				"backend-servlet.xml");
+		System.out.println(" Context :" + context);
+	}*/
+
 }

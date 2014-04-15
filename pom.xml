@@ -256,8 +256,17 @@
 				<artifactId>tiles-el</artifactId>
 				<version>3.0.3</version>
 			</dependency>
+			<dependency>
+				<groupId>org.apache.tiles</groupId>
+				<artifactId>tiles-core</artifactId>
+				<version>3.0.3</version>
+			</dependency>
 
-
+			<dependency>
+				<groupId>org.apache.tiles</groupId>
+				<artifactId>tiles-api</artifactId>
+				<version>3.0.3</version>
+			</dependency>
 
 			<!-- servlet api -->
 			<dependency>

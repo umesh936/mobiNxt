@@ -1,37 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Member Login Page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>Login MobiNxtGen</title>
+<link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 <body>
-	<form method="POST" action="login">
-		<table>
-			<tr>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>UserName :</td>
-				<td><input type="text" name="userName"></td>
-			</tr>
-			<tr>
-				<td>Password :</td>
-				<td><input type="password" name="password"></td>
-			</tr>
-
-			<tr>
-				<td colspan="3"><input type="submit" value="Login"></td>
-			</tr>
-		</table>
-	</form>
-	<form method="GET" action="login/signup">
-	New User 
-	<table>
-			<tr>
-				<td colspan="3"><input type="submit" value="Signup"></td>
-			</tr>
-		</table>
-	</form>
+	<!-- Begin Page Content -->
+	<div id="container">
+		<form action="login" method="post">
+			<label for="username">Username:</label>
+			 <input type="text" id="userName" name="userName"> 
+			 <label for="password">Password:</label>
+			<input type="password" id="password" name="password">
+					<div id="lower">
+						<a href="/signup.jsp" class="newUser">New User</a> 
+							<input type="submit" value="Login">
+					</div>
+					<!--/ lower-->
+		</form>
+	</div>
+	<!--/ container-->
+	<!-- End Page Content -->
 </body>
 </html>

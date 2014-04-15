@@ -17,7 +17,7 @@ import com.mobiNxtGen.login.service.LoginService;
 import com.mobiNxtGen.login.service.model.LoggedInUser;
 
 @Controller
-@RequestMapping(value = "/login")
+@RequestMapping(value = "/")
 public class LoginController extends BaseController {
 
 	private static final Logger logger = Logger
@@ -26,7 +26,7 @@ public class LoginController extends BaseController {
 	@Resource
 	LoginService loginService;
 
-	@RequestMapping(value = "/", method = RequestMethod.POST)
+	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	@ResponseBody
 	public ResponseEntity<String> authenitcateUser(
 			@RequestParam String userName, @RequestParam String password) {
@@ -43,13 +43,13 @@ public class LoginController extends BaseController {
 			logger.debug("User is authenticated.");
 		}
 		return null;
-
 	}
 
 	@RequestMapping(value = "/signup", method = RequestMethod.GET)
 	@ResponseBody
 	public ModelAndView signUpUser() {
-		return null;
+		//return getModelAndView("home/signup/body", null);
+		return getModelAndView("@signup-mobiNxtGen", null);
 	}
 
 }
